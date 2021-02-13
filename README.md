@@ -24,4 +24,4 @@ If you've installed Python-based extension before, then you're probably good to 
 If you run into any issues or if you have suggestions for improvements, feel free to open an issue or create a pull request!
 
 ## License
-See [LICENSE.md](LICENSE.md).
+See [LICENSE](LICENSE).
