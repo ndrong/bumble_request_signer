@@ -8,16 +8,11 @@ Requests that are executed without the required signature header, or with an inv
 ## Install
 If you've installed Python-based extension before, then you're probably good to go! If not, then please follow the steps below:
 
-0. (Prerequisite) Make sure that you have Burp Suite setup to support Jython-based plugins. If you haven't done so before, please [download the latest standalone Jython jar](https://www.jython.org/download.html) and point Burp Suite to its location:
-![Step 0](screenshots/install_step_0.png)
-1. Navigate to the Extender tab and press 'Add':
-![Step 1](screenshots/install_step_1.png)
-2. Select 'Python' as the extension type and click on 'Select file ...':
-![Step 2](screenshots/install_step_2.png)
-3. Navigate to the root folder of this repository, select `bumble_request_signer.py` and press 'Open':
-![Step 3](screenshots/install_step_3.png)
-4. Press 'Next':
-![Step 4](screenshots/install_step_4.png)
+0. (Prerequisite) Make sure that you have Burp Suite setup to support Jython-based plugins. If you haven't done so before, please [download the latest standalone Jython jar](https://www.jython.org/download.html) and point Burp Suite to its location: <img src="https://github.com/NDrong/bumble_request_signer/raw/master/screenshots/install_step_0.png" alt="Step 0" height="350"/>
+1. Navigate to the Extender tab and press 'Add': <img src="https://github.com/NDrong/bumble_request_signer/raw/master/screenshots/install_step_1.png" alt="Step 1" height="350"/>
+2. Select 'Python' as the extension type and click on 'Select file ...': <img src="https://github.com/NDrong/bumble_request_signer/raw/master/screenshots/install_step_2.png" alt="Step 2" height="350"/>
+3. Navigate to the root folder of this repository, select `bumble_request_signer.py` and press 'Open': <img src="https://github.com/NDrong/bumble_request_signer/raw/master/screenshots/install_step_3.png" alt="Step 3" height="350"/>
+4. Press 'Next':  <img src="https://github.com/NDrong/bumble_request_signer/raw/master/screenshots/install_step_4.png" alt="Step 4" height="350"/>
 5. Congratulations! You should now see a window telling you that the extension has loaded successfully. You may close this window and continue to use Burp Suite as you normally would. Keep in mind that the extension currently only works for requests originating from the Request and Intruder tabs. Furthermore, functionality is limited to `https://*.bumble.com`.
 
 ## Issues
