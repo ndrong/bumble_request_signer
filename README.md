@@ -3,7 +3,7 @@
 This repository contains an extension for [Burp Suite](https://portswigger.net/burp) that intercepts HTTP requests to `*.bumble.com`, executed from either the Repeater or Intruder tab.
 The intercepted request is then automatically modified to include (or update, if already present) the required signature header, computed based on the request body, for Bumble's API.
 
-Requests that are executed without the required signature header, or with an invalid signature, will result in an error response. This extension saves time when working on Bumble's bug bounty program, since you no longer have to manually sign each reqeust after modifying the request body.
+Requests that are executed without the required signature header, or with an invalid signature, will result in an error response. This extension saves time when working on [Bumble's bug bounty program](https://hackerone.com/bumble), since you no longer have to manually sign each reqeust after modifying the request body.
 
 ## Install
 If you've installed Python-based extension before, then you're probably good to go! If not, then please follow the steps below:
