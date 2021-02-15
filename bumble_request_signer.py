@@ -22,10 +22,10 @@ class BurpExtender(IBurpExtender, IHttpListener):
         if toolFlag != self._callbacks.TOOL_REPEATER and toolFlag != self._callbacks.TOOL_INTRUDER:
             return
 
-        # Get the HTTP service for the request
-        httpService = messageInfo.getHttpService()
+        # Get the host for this request.
+        host = messageInfo.getHttpService().getHost()
 
-        if httpService.getHost().endswith('.bumble.com'):
+        if host.endswith('.bumble.com') or host == 'bumble.com':
             request = messageInfo.getRequest()
             requestInfo = self._helpers.analyzeRequest(request)
             headers = requestInfo.getHeaders()
@@ -44,7 +44,6 @@ class BurpExtender(IBurpExtender, IHttpListener):
             # Update the request in Burp
             updatedRequest = self._helpers.buildHttpMessage(headers, body)
             messageInfo.setRequest(updatedRequest)
-
 
     def computeSignature(self, body):
         text = body + 'whitetelevisionbulbelectionroofhorseflying'
